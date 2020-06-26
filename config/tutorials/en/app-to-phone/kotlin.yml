@@ -18,15 +18,15 @@ prerequisites:
   - install-android-studio
 
 tasks:
-  - client-sdk/app-to-phone/create-ncco
-  - client-sdk/app-to-phone/create-application
+  - client-sdk/android-shared/create-ncco
+  - client-sdk/android-shared/create-application
   - client-sdk/android-shared/call/create-user-alice
   - client-sdk/android-shared/generate-jwt-alice
   - client-sdk/app-to-phone/starter-project
   - client-sdk/android-shared/initialize-client
   - client-sdk/android-shared/configure-jwt-alice
   - client-sdk/android-shared/call/authenticate-alice
-  - client-sdk/app-to-phone/make-app-to-phone-call
+  - client-sdk/app-to-phone/make-call
 
 conclusion:
   title: What's next?
@@ -36,12 +36,10 @@ conclusion:
     # What's next?
 
     For the complete version please see the Android Studio project in the `kotlin-completed` folder of 
-    the `git` repository you've cloned ([GitHub](https://github.com/nexmo-community/client-sdk-android-tutorial-voice-app-to-phone)).
+    the [git repository](https://github.com/nexmo-community/client-sdk-android-tutorial-voice-app-to-phone) you've cloned.
 
     You can do a lot more with the Client SDK. See [Client SDK documentation](/client-sdk/overview) or review
     [Android Client SDK documentation](https://developer.nexmo.com/sdk/stitch/android/index).
-
-    You can do a lot more with the Client SDK. See [Client SDK documentation](/client-sdk/overview).
 
     We want to hear what ideas you have in mind? Contact us at <a href="mailto:devrel@vonage.com">devrel@vonage.com</a>
 
