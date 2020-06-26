@@ -3,7 +3,7 @@ title: Make a call
 description: In this step you make a phone call
 ---
 
-# Authenticate Your Users
+# Make a call
 
 Locate the `startAppToAppCall` method within the `MainViewModel` class and fill its body to enable call:
 
