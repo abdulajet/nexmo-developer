@@ -21,8 +21,8 @@ The application consists of four screens:
 
 - **login** - responsible for logging the user
 - **main** - allows to start a call and listens for incoming call
-- **incomingCall** - answer or reject incoming call
-- **onCall** - displayed during ongoing call, allows to end current call
+- **incoming call** - answer or reject incoming call
+- **on call** - displayed during ongoing call, allows to end current call
 
 ## Project internal structure
 
