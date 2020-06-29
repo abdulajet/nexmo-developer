@@ -72,7 +72,7 @@ Field | Example | Description
  -- | -- | --
 `uri` | `wss://example.com/socket` | The endpoint of your WebSocket server that Nexmo will connect to
 `content-type` | `audio/l16;rate=16000` | A string representing the audio sampling rate, either `audio/l16;rate=16000` or `audio/l16;rate=8000`
-`headers` | { 'name': 'J Doe', 'age': 40 } | An object of key/value pairs with additional optional properties to send to your Websocket server, with a maximum length of 512 bytes.
+`headers` | `{ 'name': 'J Doe', 'age': 40 }` | An object of key/value pairs with additional optional properties to send to your Websocket server, with a maximum length of 512 bytes.
 
 You can find all the data fields for an NCCO at the [NCCO Reference Guide](/voice/voice-api/ncco-reference).
 
