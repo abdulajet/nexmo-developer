@@ -1,6 +1,6 @@
 ---
 title: Make a call
-description: In this step you will make a phone call
+description: In this step you learn how to make a phone call.
 ---
 
 # Make a call

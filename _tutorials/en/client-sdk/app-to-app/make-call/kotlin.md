@@ -1,6 +1,6 @@
 ---
 title: Make a call
-description: In this step you will make an app call
+description: In this step you learn how to make an app-to-app call.
 ---
 
 # Make a call
