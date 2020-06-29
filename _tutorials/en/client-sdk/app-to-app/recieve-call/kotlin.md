@@ -1,6 +1,6 @@
 ---
 title: Receive a call
-description: In this step you will recieve make an app call
+description: In this step you learn how to receive an in-app call
 ---
 
 # Make a call
