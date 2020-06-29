@@ -66,11 +66,16 @@ To instruct Nexmo to connect to a WebSocket your application server must return 
 ]
 ```
 
-The `uri` identifies the endpoint of your WebSocket server that Nexmo will connect to.
+The specific data fields for webhooks are the following:
 
-To choose the sampling rate set the `content-type` property to `audio/l16;rate=16000` or `audio/l16;rate=8000` depending on if you need the data at 16kHz or 8kHz. Most real-time transcription services work best with audio at 8kHz.
+Field | Example | Description
+ -- | -- | --
+`uri` | `wss://example.com/socket` | The endpoint of your WebSocket server that Nexmo will connect to
+`content-type` | `audio/l16;rate=16000` | A string representing the audio sampling rate, either `audio/l16;rate=16000` or `audio/l16;rate=8000`
+`headers` | { 'name': 'J Doe', 'age': 40 } | An object of key/value pairs with additional optional properties to send to your Websocket server, with a maximum length of 512 bytes.
 
-You can send additional optional properties to your WebSocket server by adding key/value pairs to a `headers` property. The maximum length of the `headers` data is 512 bytes.
+You can find all the data fields for an NCCO at the [NCCO Reference Guide](/voice/voice-api/ncco-reference).
+
 
 ## Handling incoming WebSocket messages
 
@@ -80,6 +85,7 @@ The initial message sent on an established WebSocket connection will be text-bas
 
 ``` json
 {
+    "headers": {},
     "event":"websocket:connected",
     "content-type":"audio/l16;rate=16000",
     "prop1": "value1",
@@ -114,8 +120,10 @@ This results in the following JSON in the first message on the WebSocket:
 {
     "event":"websocket:connected",
     "content-type":"audio/l16;rate=16000",
-    "language": "en-GB",
-    "callerID": "447700900123"
+    "headers": {
+      "language": "en-GB",
+      "callerID": "447700900123"
+    }
 }
 ```
 After the initial text message subsequent messages on the WebSocket can be text or binary.
@@ -158,7 +166,7 @@ You can send audio back into the call by writing binary messages to the WebSocke
 You can send the messages at a faster than real-time rate and they will be buffered for playing at the Nexmo end. So for example, you can send an entire file to the socket in one write, providing the 320/640 byte per message restriction is observed. Nexmo will only buffer 1024 messages which should be enough for around 20 seconds of audio, if your file is longer than this you should implement a delay of 18-19ms between each message, or consider using the [REST API to play an audio file](/voice/voice-api/code-snippets/play-an-audio-stream-into-a-call/).
 
 
-## Websocket fallback options
+## Websocket Event Callbacks
 
 You can be notified via an event when a connection to a WebSocket cannot be established or if the application terminates the WebSocket connection for any reason.
 
