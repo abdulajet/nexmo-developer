@@ -33,9 +33,9 @@ The NCCO must be public and accessible by the internet. To accomplish that, we w
 ]
 ```
 
-4) Replace `PHONE_NUMBER` with your phone number (must be in [E.164](https://developer.nexmo.com/concepts/guides/glossary#e-164-format) format, for example: 14155550100 or 447700900001)
+1) Replace `PHONE_NUMBER` with your phone number (must be in [E.164](/concepts/guides/glossary#e-164-format) format, for example: 14155550100 or 447700900001)
 
-5) Click the `Create secret gist` button.
+2) Click the `Create secret gist` button.
 
 ```screenshot
 image: public/assets/images/client-sdk/android-shared/create-ncco/gist1.png

@@ -33,11 +33,11 @@ The NCCO must be public and accessible by the internet. To accomplish that, we w
 ]
 ```
 
-4) Replace `PHONE_NUMBER` with your phone number (must be in [E.164](https://developer.nexmo.com/concepts/guides/glossary#e-164-format) format, for example: 14155550100 or 447700900001)
+1) Replace `PHONE_NUMBER` with your phone number (must be in [E.164](/concepts/guides/glossary#e-164-format) format, for example: 14155550100 or 447700900001)
 
-5) Click the `Create secret gist` button.
+2) Click the `Create secret gist` button.
 
-6) Click the `Raw` button and take note of the URL shown in your browser, you will be using it in the next step. It should look like this:
+3) Click the `Raw` button and take note of the URL shown in your browser, you will be using it in the next step. It should look like this:
 **https://gist.githubusercontent.com/`USERNAME`/`RANDOM_HEX`/raw/`RANDOM_HEX`/ncco.json**
 
 
