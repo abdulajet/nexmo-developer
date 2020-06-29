@@ -8,7 +8,7 @@ navigation_weight: 7
 
 This guide introduces you to WebSockets and how and why you might want to use them in your Nexmo Voice API applications.
 
-> For sample applications and other resources see  [further reading](#further-reading).
+> For sample applications and other resources see [further reading](#further-reading).
 
 
 ## What is a WebSocket?
