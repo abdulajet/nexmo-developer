@@ -55,10 +55,10 @@ To instruct Nexmo to connect to a WebSocket your application server must return 
                     "address": {
                         "line_1": "Apartment 14",
                         "line_2": "123 Example Street",
-                        "city": "New York City"
-                    },
-                    "system_roles": [183493, 1038492, 22],
-                    "enable_auditing": false
+                        "city": "New York City",
+                        "system_roles": [183493, 1038492, 22],
+                        "enable_auditing": false
+                    }
                 }
            }
        ]
@@ -81,15 +81,16 @@ You can find all the data fields for an NCCO at the [NCCO Reference Guide](/voic
 
 ### First message
 
-The initial message sent on an established WebSocket connection will be text-based and contain a JSON payload, it will have the `event` field set to `websocket:connected` and detail the audio format in `content-type`, along with any other metadata that you have put in the `headers` property of the WebSocket endpoint in your NCCO `connect`. The `headers` property is not present on the JSON payload so the properties are at the top-level of the JSON. For example:
+The initial message sent on an established WebSocket connection will be text-based and contain a JSON payload, it will have the `event` field set to `websocket:connected` and detail the audio format in `content-type`, along with any other metadata that you have put in the `headers` property of the WebSocket endpoint in your NCCO `connect`, for example:
 
 ``` json
 {
-    "headers": {},
+    "headers": {
+      "prop1": "value1",
+      "prop2": "value2"
+    },
     "event":"websocket:connected",
     "content-type":"audio/l16;rate=16000",
-    "prop1": "value1",
-    "prop2": "value2"
 }
 ```
 
