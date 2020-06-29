@@ -1,5 +1,5 @@
 ---
-title: Configure JWTs
+title: Configure JWT
 description: In this step you learn how to add JWTs to the application.
 ---
 

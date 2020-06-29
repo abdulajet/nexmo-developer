@@ -1,5 +1,5 @@
 ---
-title: Authenticate Your Users
+title: Authenticate Your User
 description: In this step you authenticate your users via the JWTs you created earlier
 ---
 
