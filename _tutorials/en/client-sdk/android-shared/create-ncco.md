@@ -7,7 +7,7 @@ description: In this step, you modify your NCCO using GitHub Gist.
 
 A Nexmo Call Control Object (NCCO) is a JSON array that you use to control the flow of a Voice API call. More information on NCCO can be found [here](https://developer.nexmo.com/voice/voice-api/ncco-reference).
 
-The NCCO must be public and accessible by the internet. To accomplish that, we will be using [GitHub Gist](https://gist.github.com/):
+The NCCO must be public and accessible by the internet. To accomplish that, we will be using [GitHub Gist](https://gist.github.com/) that provides easy way to host the configuration:
 
 1) Go to [https://gist.github.com/](https://gist.github.com/).
 
@@ -37,7 +37,19 @@ The NCCO must be public and accessible by the internet. To accomplish that, we w
 
 5) Click the `Create secret gist` button.
 
-6) Click the `Raw` button and take note of the URL shown in your browser, you will be using it in the next step. It should look like this:
-**https://gist.githubusercontent.com/`USERNAME`/`RANDOM_HEX`/raw/`RANDOM_HEX`/ncco.json**
+```screenshot
+image: public/assets/images/client-sdk/android-shared/create-ncco/gist1.png
+```
+
+6) Click the `Raw` button. 
+
+```screenshot
+image: public/assets/images/client-sdk/android-shared/create-ncco/gist2.png
+```
 
 
+7) Take note of the URL shown in your browser, you will be using it in the next step. 
+
+```screenshot
+image: public/assets/images/client-sdk/android-shared/create-ncco/gist3.png
+```
